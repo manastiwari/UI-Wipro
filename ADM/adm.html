@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>ADM</title>
+    <style>
+    #b1{
+        background-image:url('xyz5.jpg');
+        background-repeat: no-repeat;
+        
+    }
+    #c11{
+        color: hsla(0, 0%, 100%, 0.445);
+        border: hsla(0, 0%, 94%, 0);
+        background-color:hsla(0, 0%, 94%, 0);
+        text-align: center
+    }
+    #c11:hover{
+        background-color:rgba(255, 99, 71, 0.1);
+    }
+    #c12{
+        color: hsla(0, 0%, 100%, 0.445);
+        border: hsla(0, 0%, 94%, 0.1);
+        background-color:hsla(0, 0%, 94%, 0.1);
+        text-align: center;
+    }
+    #c12:hover{
+        background-color:rgba(255, 99, 71, 0.1);
+    }
+    #c13{
+        font-size: 20px;
+        background-color: hsla(160, 100%, 75%, 0.2);
+    }
+    #c14{
+        border: hsla(0, 0%, 94%, 0.1);
+        background-color:hsla(0, 0%, 94%, 0.1);
+        color: hsla(0, 0%, 100%, 0.445);
+    }
+    #c14:hover{
+        background-color:rgba(255, 99, 71, 0.1);
+    }
+    #c15{
+        font-size: 20px;
+        color: white;
+    }
+    #c17{
+        font-size: 20px;
+        color: white;
+    }
+    #c18{
+        font-size: 20px;
+        color: white;
+    }
+    #c123{
+        text-align: right;
+    }
+    #g1{
+        color: white;
+    }
+    * {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+    padding: 15px 15px;
+    width: 100%;
+    background: hsla(168, 76%, 42%, 0.2);
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: hsla(0, 0%, 94%, 0.1);;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color:white;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: hsla(0, 0%, 94%, 0.1);;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: hsla(0, 0%, 100%, 0.445);
+}
+
+.days li .active {
+    padding: 5px;
+    background: hsla(168, 76%, 42%, 0.2);
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+    </style>
+  
+</head>
+  <body id="b1">
+    <div id="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <span><img src="wiprologo1.png" alt="Logo" width="90" height="70"></span>
+                </div>
+                <div class="col-md-9">
+                    <div class="col-md-6">
+                        <h4 style="color: white">Today</h4>
+                        <h5 style="color: hsla(0, 0%, 100%, 0.445)">02 April</h5>
+                        <h6 style="color: hsla(0, 0%, 100%, 0.445)">2018</h6>
+                    </div>
+                    <div class="col-md-6" id="c123">
+                        <h4 style="color: white"><span class="glyphicon glyphicon-triangle-user" aria-hidden="true"></span>User name</h4>
+                        <h5 style="color: hsla(0, 0%, 100%, 0.445)"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> Manager View</h5>
+                    </div>
+                            <!--li style="float:right"><span class="glyphicon glyphicon-user" style="size:40ps"></span></li>
+                            <li><p style="font-size: 20px">User name<br>Manager View <span class="glyphicon glyphicon-triangle-bottom"></span></p></li>
+                            <li id="fl2" >Manager View <span class="glyphicon glyphicon-triangle-bottom"></span></li-->
+                        
+                    
+                        <!--span style="float:right">
+                            <span class="glyphicon glyphicon-user" style="size:40ps"></span>
+                            <span style="float:left">
+                                <ul style="list-style-type:None">   
+                                    <li style="font-size: 20px">User name</li>
+                                    <li style="font-size: 15px">Manager View<span class="glyphicon-triangle-bottom"></span></li>
+                                </ul>
+                            </span>
+                        </span-->                    
+                    <br><br><br><br><hr style="border-color: hsla(0, 0%, 100%, 0.445)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <p id="c17"><span class="glyphicon glyphicon-scale" aria-hidden="true"></span> Efforts</p>
+                    <div class="col-md-6">
+                        <div class="well dash-box" id="c12">
+                            <h5 style="color: white">Appreciations</h5>
+                            <h2>10</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="well dash-box" id="c12">
+                            <h5 style="color: white">Awards</h5>
+                            <h2>05</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="well dash-box" id="c12">
+                            <h5 style="color: white">Badges</h5>
+                            <h2>03</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="well dash-box" id="c12">
+                            <h5 style="color: white">Total</h5>
+                            <h2>18</h2>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-9">
+                    <p id="c18"><span class="glyphicon glyphicon-calender" aria-hidden="true"></span> March<small style="color:hsla(0, 0%, 100%, 0.445)">   Weekly View</small></p>
+                    <div class="col-md-2">
+                        <div class="well dash-box" id="c11">
+                            <h4 style="color: white">Date</h4>
+                            <h5 style="color: white">Day</h2><br><br>
+                            <h5>Efforts</h5>
+                            <h5>Hours</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="well dash-box" id="c11">
+                            <h4 style="color: white">Date</h4>
+                            <h5 style="color: white">Day</h2><br><br>
+                            <h5>Efforts</h5>
+                            <h5>Hours</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="well dash-box" id="c11">
+                            <h4 style="color: white">Date</h4>
+                            <h5 style="color: white">Day</h2><br><br>
+                            <h5>Efforts</h5>
+                            <h5>Hours</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="well dash-box" id="c11">
+                            <h4 style="color: white">Date</h4>
+                            <h5 style="color: white">Day</h2><br><br>
+                            <h5>Efforts</h5>
+                            <h5>Hours</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="well dash-box" id="c11">
+                            <h4 style="color: white">Date</h4>
+                            <h5 style="color: white">Day</h2><br><br>
+                            <h5>Efforts</h5>
+                            <h5>Hours</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="well dash-box" id="c11">
+                            <h4 style="color: white">Date</h4>
+                            <h5 style="color: white">Day</h2><br><br>
+                            <h5>Efforts</h5>
+                            <h5>Hours</h5>
+                        </div>
+                    </div>
+                    <br>
+                    <h4 style="color: white">Notification</h4>
+                    <hr style="border-color: hsla(0, 0%, 100%, 0.445)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+
+                        <div class="month">      
+                          <ul>
+                            <li class="prev">&#10094;</li>
+                            <li class="next">&#10095;</li>
+                            <li>
+                              July<br>
+                              <span style="font-size:18px">2018</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <ul class="weekdays">
+                          <li>Mo</li>
+                          <li>Tu</li>
+                          <li>We</li>
+                          <li>Th</li>
+                          <li>Fr</li>
+                          <li>Sa</li>
+                          <li>Su</li>
+                        </ul>
+                        
+                        <ul class="days">  
+                          <li>1</li>
+                          <li>2</li>
+                          <li>3</li>
+                          <li>4</li>
+                          <li>5</li>
+                          <li><span class="active">6</span></li>
+                          <li>7</li>
+                          <li>8</li>
+                          <li>9</li>
+                          <li>10</li>
+                          <li>11</li>
+                          <li>12</li>
+                          <li>13</li>
+                          <li>14</li>
+                          <li>15</li>
+                          <li>16</li>
+                          <li>17</li>
+                          <li>18</li>
+                          <li>19</li>
+                          <li>20</li>
+                          <li>21</li>
+                          <li>22</li>
+                          <li>23</li>
+                          <li>24</li>
+                          <li>25</li>
+                          <li>26</li>
+                          <li>27</li>
+                          <li>28</li>
+                          <li>29</li>
+                          <li>30</li>
+                          <li>31</li>
+                        </ul>
+                </div>
+                <div class="col-md-9" id="g1">
+                    <div id="headline-chart" class="ct-chart"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="300" class="ct-chart-line" style="width: 100%; height: 300;"><g class="ct-grids"><line y1="265" y2="265" x1="50" x2="717.75" class="ct-grid ct-vertical"></line><line y1="229.28571428571428" y2="229.28571428571428" x1="50" x2="717.75" class="ct-grid ct-vertical"></line><line y1="193.57142857142856" y2="193.57142857142856" x1="50" x2="717.75" class="ct-grid ct-vertical"></line><line y1="157.85714285714286" y2="157.85714285714286" x1="50" x2="717.75" class="ct-grid ct-vertical"></line><line y1="122.14285714285714" y2="122.14285714285714" x1="50" x2="717.75" class="ct-grid ct-vertical"></line><line y1="86.42857142857142" y2="86.42857142857142" x1="50" x2="717.75" class="ct-grid ct-vertical"></line><line y1="50.71428571428572" y2="50.71428571428572" x1="50" x2="717.75" class="ct-grid ct-vertical"></line><line y1="15" y2="15" x1="50" x2="717.75" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><path d="M50,265L50,172.143L161.292,129.286L272.583,165L383.875,50.714L495.167,157.857L606.458,165L717.75,86.429L717.75,265Z" class="ct-area"></path></g><g class="ct-series ct-series-b"><path d="M50,265L50,236.429L161.292,157.857L272.583,207.857L383.875,93.571L495.167,129.286L606.458,65L717.75,22.143L717.75,265Z" class="ct-area"></path></g></g><g class="ct-labels"><foreignobject style="overflow: visible;" x="50" y="270" width="111.29166666666667" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 111px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Mon</span></foreignobject><foreignobject style="overflow: visible;" x="161.29166666666669" y="270" width="111.29166666666667" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 111px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Tue</span></foreignobject><foreignobject style="overflow: visible;" x="272.58333333333337" y="270" width="111.29166666666666" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 111px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Wed</span></foreignobject><foreignobject style="overflow: visible;" x="383.875" y="270" width="111.29166666666669" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 111px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Thu</span></foreignobject><foreignobject style="overflow: visible;" x="495.1666666666667" y="270" width="111.29166666666669" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 111px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Fri</span></foreignobject><foreignobject style="overflow: visible;" x="606.4583333333334" y="270" width="111.29166666666663" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 111px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Sat</span></foreignobject><foreignobject style="overflow: visible;" x="717.75" y="270" width="30" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 30px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">Sun</span></foreignobject><foreignobject style="overflow: visible;" y="229.28571428571428" x="10" height="35.714285714285715" width="30"><span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">10</span></foreignobject><foreignobject style="overflow: visible;" y="193.57142857142856" x="10" height="35.714285714285715" width="30"><span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">15</span></foreignobject><foreignobject style="overflow: visible;" y="157.85714285714283" x="10" height="35.71428571428571" width="30"><span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">20</span></foreignobject><foreignobject style="overflow: visible;" y="122.14285714285714" x="10" height="35.71428571428572" width="30"><span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">25</span></foreignobject><foreignobject style="overflow: visible;" y="86.42857142857142" x="10" height="35.71428571428572" width="30"><span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">30</span></foreignobject><foreignobject style="overflow: visible;" y="50.71428571428572" x="10" height="35.714285714285694" width="30"><span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">35</span></foreignobject><foreignobject style="overflow: visible;" y="15" x="10" height="35.71428571428572" width="30"><span class="ct-label ct-vertical ct-start" style="height: 36px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">40</span></foreignobject><foreignobject style="overflow: visible;" y="-15" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/2000/xmlns/">45</span></foreignobject></g></svg></div>
+                            
+                </div>
+            </div>
+            <hr style="border-color: hsla(0, 0%, 100%, 0.445)">
+            <div class="row">
+                <div class="col-md-12">    
+                <p id="c15"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Leader Board:<small> This month</small></p>
+                
+                    <div class="col-md-2">
+                        <div class="well dash-box" id="c14">
+                            <h5 style="color: white">101010<br>Name</h5>
+                            <h6>Name<br>(Supervisor)</h6>
+                            <br>
+                            <h6>Thursday,Friday</h6>
+                            <h6>Monday,Tuesday</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="well dash-box" id="c14">
+                                <h5 style="color: white">101010<br>Name</h5>
+                                <h6>Name<br>(Supervisor)</h6>
+                                <br>
+                                <h6>Thursday,Friday</h6>
+                                <h6>Monday,Tuesday</h6>
+                            </div>
+                        </div>
+                    <div class="col-md-2">
+                        <div class="well dash-box" id="c14">
+                            <h5 style="color: white">101010<br>Name</h5>
+                            <h6>Name<br>(Supervisor)</h6>
+                            <br>
+                            <h6>Thursday,Friday</h6>
+                            <h6>Monday,Tuesday</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="well dash-box" id="c14">
+                                <h5 style="color: white">101010<br>Name</h5>
+                                <h6>Name<br>(Supervisor)</h6>
+                                <br>
+                                <h6>Thursday,Friday</h6>
+                                <h6>Monday,Tuesday</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                                <div class="well dash-box" id="c14">
+                                    <h5 style="color: white">101010<br>Name</h5>
+                                    <h6>Name<br>(Supervisor)</h6>
+                                    <br>
+                                    <h6>Thursday,Friday</h6>
+                                    <h6>Monday,Tuesday</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                    <div class="well dash-box" id="c14">
+                                        <h5 style="color: white">101010<br>Name</h5>
+                                        <h6>Name<br>(Supervisor)</h6>
+                                        <br>
+                                        <h6>Thursday,Friday</h6>
+                                        <h6>Monday,Tuesday</h6>
+                                    </div>
+                                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+  </body>
+</html>
